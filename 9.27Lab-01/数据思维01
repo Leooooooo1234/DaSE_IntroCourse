@@ -1,0 +1,13 @@
+import numpy as np
+import math
+def f(x):
+    return (x*x*x + x*x)
+def function(a,b):
+    x = np.random.uniform(a,b,10000)
+    y = f(x)
+    sum = 0
+    for i in y:
+        sum += i;
+    return sum/10000
+print(function(0,1))
+
