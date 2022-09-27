@@ -1,0 +1,7 @@
+def function(k,e):
+    guess = k
+    while abs(guess * guess - k) >= e:
+        guess = guess - (((guess * guess)-k)/(guess*2))
+    return guess
+
+print(function(2,0.00000001))
