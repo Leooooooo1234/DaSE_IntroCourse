@@ -1,0 +1,11 @@
+s = input()
+num = 1
+maxn = 0
+for i in range(0,len(s)-1):
+    if(s[i] == s[i+1]):
+        num += 1
+    else:
+        if(num > maxn):
+            maxn = num
+            num = 1
+print(maxn)
