@@ -1,0 +1,13 @@
+def function(x,e):
+    low = 0.0
+    high = max(1.0,x)
+    ans = (high + low) / 2.0
+    while abs(ans**2 - x) >= e:
+        if ans**2 < x:
+            low = ans
+        else:
+            high = ans
+        ans = (high + low) / 2
+    return ans
+
+print(function(2,0.00000001))
